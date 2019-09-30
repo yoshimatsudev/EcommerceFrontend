@@ -1,0 +1,21 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+    --off-white: #fffff2;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.basic-container {
+    padding: 0vh;
+}
+
+.mat-figure:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.mat-app-background {
+    background-color: var(--off-white);
+}
