@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MercadoDeDevs": {
+    "Ecommerce": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/MercadoDeDevs",
+            "outputPath": "dist/Ecommerce",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MercadoDeDevs:build"
+            "browserTarget": "Ecommerce:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MercadoDeDevs:build:production"
+              "browserTarget": "Ecommerce:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MercadoDeDevs:build"
+            "browserTarget": "Ecommerce:build"
           }
         },
         "test": {
@@ -115,16 +115,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "MercadoDeDevs:serve"
+            "devServerTarget": "Ecommerce:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "MercadoDeDevs:serve:production"
+              "devServerTarget": "Ecommerce:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "MercadoDeDevs"
+  "defaultProject": "Ecommerce"
 }
